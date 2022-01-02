@@ -1,4 +1,4 @@
-import SimConnect
+import SimConnectExpansion
 from unittest import TestCase
 from unittest.mock import Mock, patch, create_autospec
 

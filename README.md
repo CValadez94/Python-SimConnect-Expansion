@@ -1,4 +1,4 @@
-[![PyPI version](https://badge.fury.io/py/SimConnect.svg)](https://badge.fury.io/py/SimConnect)
+# TODO: Update everything to reflect changes
 # Python-SimConnect
 
 Python interface for Microsoft Flight Simulator 2020 (MSFS2020) using SimConnect

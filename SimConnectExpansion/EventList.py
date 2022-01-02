@@ -1,4 +1,4 @@
-from SimConnect import *
+from SimConnectExpansion import *
 
 
 class Event(object):
@@ -788,6 +788,10 @@ class AircraftEvents():
 			(b'TOGGLE_WING_LIGHTS', "Toggle wing lights", "All aircraft"),
 			(b'TOGGLE_NAV_LIGHTS', "Toggle navigation lights", "All aircraft"),
 			(b'TOGGLE_CABIN_LIGHTS', "Toggle cockpit/cabin lights", "All aircraft"),
+            (b'BEACON_LIGHTS_SET', "Set beacon lights on/off (1,0)", "All aircraft"),
+            (b'CABIN_LIGHTS_SET', "Set cabin lights on/off (1,0)", "All aircraft"),
+            (b'NAV_LIGHTS_SET', "Set navigation lights on/off (1,0)", "All aircraft"),
+            (b'TAXI_LIGHTS_SET', "Set taxi lights on/off (1,0)", "All aircraft"),
 		]
 
 	class __Failures(EventHelper):
@@ -884,6 +888,12 @@ class AircraftEvents():
 			(b'ANTISKID_BRAKES_TOGGLE', "Turn the anti-skid braking system on or off.", "Shared Cockpit"),
 			(b'GPWS_SWITCH_TOGGLE', "Turn the g round proximity warning system (GPWS), on or off.", "Shared Cockpit"),
 			(b'MANUAL_FUEL_PRESSURE_PUMP', "Activate the manual fuel pressure pump.", "Shared Cockpit"),
+            (b'ALTERNATOR_SET', "Sets the indexed alternator.", ""),
+            (b'MASTER_BATTERY_SET', "Sets the battery (0,1)", ""),
+            (b'BATTERY1_SET', "Sets battery 1 (0,1)", ""),
+            (b'BATTERY2_SET', "Sets battery 1 (0,1)", ""),
+            (b'BATTERY3_SET', "Sets battery 1 (0,1)", ""),
+            (b'BATTERY4_SET', "Sets battery 1 (0,1)", ""),
 		]
 
 	class __Nose_wheel_steering(EventHelper):

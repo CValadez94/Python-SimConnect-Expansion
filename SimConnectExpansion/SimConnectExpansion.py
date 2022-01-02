@@ -8,7 +8,7 @@ from .Attributes import *
 import os
 import threading
 
-_library_path = os.path.splitext(os.path.abspath(__file__))[0] + '.dll'
+_library_path = os.path.split(os.path.abspath(__file__))[0] + '\SimConnect.dll'
 
 LOGGER = logging.getLogger(__name__)
 
@@ -17,7 +17,7 @@ def millis():
 	return int(round(time.time() * 1000))
 
 
-class SimConnect:
+class SimConnectExpansion:
 
 	def IsHR(self, hr, value):
 		_hr = ctypes.HRESULT(hr)

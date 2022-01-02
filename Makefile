@@ -11,7 +11,7 @@ test-sim:
 	python example.py
 
 test: install install-dev
-	python -m pytest --cov=SimConnect --cov-report xml
+	python -m pytest --cov=SimConnectExpansion --cov-report xml
 
 update-dependencies:
 	pipenv update
